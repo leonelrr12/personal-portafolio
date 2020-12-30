@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg">    
+
+    <!-- AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC: Personal Portafolio Webpage</title>
+
+    <style>
+        :root {
+            --main-code: #303841;
+        }
+        .welcome-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+        }
+        .welcome-section p {
+            color: #be3144;
+            font-size: 3rem;
+            font-weight: 100;
+            font-style: italic;
+        }
+        .projects-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #45567d;
+            padding: 100px 20px;
+        }
+        .projects-section-header {
+            max-width: 640px;
+            margin: 0 auto 5rem auto;
+            border-bottom: 0.2rem solid #f0f0f0;
+        }
+        .project-title {
+            font-size: 2rem;
+            padding: 2rem 0.5rem;
+            font-weight: 500;
+
+        }
+        .project-image {
+            height: calc(100% - 6.8rem);
+            width: 100%;
+            object-fit: cover;
+        }
+        img {
+            display: block;
+        }
+
+        .code {
+            color: var(--main-code);
+            transition: color 0.3s ease-out;       
+        }
+
+        p.project-title:hover {
+            --main-code: #bd7605;
+        }
+
+        .project {
+            background: #303841;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+        }
+
+        .btn-show-all {
+            font-size: 2rem;
+            background: #303841;
+            transition: background 0.3s ease-out;
+        }
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 2px;
+        }
+
+        .contact-details {
+            font-size: 2.4rem;
+            padding: 10px 20px;
+            text-shadow: 2px 2px 1px #1f1f1f;
+            transition: transform 0.3s ease-out;
+        }
+        #profile-link:hover, #profile-fb:hover, #profile-tw:hover, #profile-mail:hover, #profile-mobil:hover {
+            transform: translate(0,10px);
+        }
+
+        .btn-show-all:hover {
+            background-color: #be3144;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #303841;
+            width: 100%;
+            height: 70vh;
+            padding: 0 2rem;
+        }
+
+        .contact-link {
+            display: flex;
+            flex-direction: row;
+            margin-top: 40px;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="welcome-section" id="welcome-section">
+        <h1>Hey I am Leonel</h1>
+        <p>a web developer</p>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+        <div class="projects-grid project-tile" id="grid">
+            <a href="#" target="_blank" class="project">
+                <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project">
+                <p class="project-title"><span class="code">< </span>Tribute Pgae<span class="code"> /></span></p>
+            </a>
+            <a href="#" target="_blank" class="project">
+                <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="project">
+                <p class="project-title"><span class="code">< </span>Random Quote Machine<span class="code"> /></span></p>
+            </a>
+            <a href="#" target="_blank" class="project">
+                <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="project">
+                <p class="project-title"><span class="code">< </span>JavaScript Calculator<span class="code"> /></span></p>
+            </a>
+            <a href="#" target="_blank" class="project">
+                <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="project">
+                <p class="project-title"><span class="code">< </span>Map Data Across the Globe<span class="code"> /></span></p>
+            </a>
+            <a href="#" target="_blank" class="project">
+                <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="project">
+                <p class="project-title"><span class="code">< </span>Wikipedia Viewer<span class="code"> /></span></p>
+            </a>
+            <a href="#" target="_blank" class="project">
+                <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
+                <p class="project-title"><span class="code">< </span>Tic Tac Toe Game<span class="code"> /></span></p>
+            </a>
+        </div>
+        <a href="" class="btn btn-show-all">Show all
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+        <div class="contact-link">
+            <a id="profile-fb"class="btn contact-details" href="">
+                <i class="fab fa-facebook-square"></i>
+                Facebook</a>
+            <a id="profile-link" class="btn contact-details" href="https://github.com/leonelrr12/" target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub</a>
+            <a id="profile-tw" class="btn contact-details" href="">
+                <i class="fab fa-twitter"></i>
+                Twitter</a>
+            <a id="profile-mail" class="btn contact-details" href="">
+                <i class="fas fa-at"></i>
+                Send a mail</a>
+            <a id="profile-mobil" class="btn contact-details" href="">
+                <i class="fas fa-mobile-alt"></i>
+                Call me</a>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="pie">
+            <p>
+                **This is just a fake portfolio. All the projects and contact details given are not real.
+            </p>
+            <p>
+                2020 &copy; Created for freeCodeCamp
+                <i class="fab fa-free-code-camp"></i>
+            </p>
+        </div>
+    </footer>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" />     -->
+</body>
+</html>
