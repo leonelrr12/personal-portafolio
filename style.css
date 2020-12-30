@@ -29,6 +29,7 @@ h1 {
 }
 h2 {
     font-size: 4.2rem;
+    text-align: center;
 }
 h1, h2 {
     font-family: 'Raleway', sans-serif;
@@ -91,16 +92,18 @@ footer {
     font-weight: 300px;
 }
 
-footer .pie {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     min-height:100px;
     align-items: center;
+    padding: 20px;;
 }
 
 footer p {
     font-size: 1.8rem;
+    margin: 20px;
 }
 
 #contact h2 {

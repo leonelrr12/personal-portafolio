@@ -29,6 +29,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             width: 100%;
             height: 100vh;
             background: #000;
@@ -111,18 +112,66 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             background-color: #303841;
             width: 100%;
             height: 70vh;
             padding: 0 2rem;
         }
 
-        .contact-link {
+        .contact-links {
             display: flex;
             flex-direction: row;
             margin-top: 40px;
         }
 
+        @media (max-width: 730px) {
+            #grid {
+                display: grid;
+                grid-template-columns: auto;
+            }
+            nav a {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 635px) {
+            #contact h2 {
+                font-size: 3rem;
+            }
+            .contact-links {
+                display: block;
+            }
+            .contact-links a{
+                font-size: 2.227rem;
+            }            
+        }
+        @media (max-width: 500px) {
+            .contact-links a{
+                font-size: 2rem;
+            }
+            footer p {
+                font-size: 1.2rem;
+                margin-top: 0;
+            } 
+            nav a {
+                font-size: 1.936rem;
+            }
+        }
+        @media (max-width: 460px) {
+            nav {
+                justify-content: center;
+                width: 100%;
+            }
+            footer {
+                flex-direction: column;
+                text-align: center;
+                font-size: 1.584rem;
+            }
+            footer p {
+                font-size: 1.584rem;
+            }            
+        }
     </style>
         
 </head>
@@ -173,7 +222,7 @@
     <section id="contact" class="contact-section">
         <h2>Let's work together...</h2>
         <p>How do you take your coffee?</p>
-        <div class="contact-link">
+        <div class="contact-links">
             <a id="profile-fb"class="btn contact-details" href="">
                 <i class="fab fa-facebook-square"></i>
                 Facebook</a>
@@ -191,16 +240,14 @@
                 Call me</a>
         </div>
     </section>
-    <footer id="footer">
-        <div class="pie">
-            <p>
-                **This is just a fake portfolio. All the projects and contact details given are not real.
-            </p>
-            <p>
-                2020 &copy; Created for freeCodeCamp
-                <i class="fab fa-free-code-camp"></i>
-            </p>
-        </div>
+    <footer>
+        <p>
+            **This is just a fake portfolio. All the projects and contact details given are not real.
+        </p>
+        <p>
+            2020 &copy; Created for freeCodeCamp
+            <i class="fab fa-free-code-camp"></i>
+        </p>
     </footer>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" />     -->
 </body>
